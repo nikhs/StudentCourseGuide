@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Student Course Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_clndrvw">Clndrvw</string>
+    <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_editattend">Editattend</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_event_main">Event_main</string>
+    <string name="title_activity_event_view">Event_view</string>
+    <string name="title_activity_event_edit">Event_edit</string>
+    <string name="title_activity_cgpa_main">Cgpa_main</string>
+    <string name="title_activity_cgpa_input">Cgpa_input</string>
+    <string name="attendance">Attendance</string>
+    <string name="eventnotifier">Event Notifier</string>
+    <string name="back">Back</string>
+    <string name="t1pm2pm">1pm-2pm</string>
+    <string name="t2pm3pm">2pm-3pm</string>
+    <string name="t3pm4pm">3pm-4pm</string>
+    <string name="t10am11am">10am-11am</string>
+    <string name="t11am12pm">11am-12pm</string>
+    <string name="t9am10am">9am-10am</string>
+    <string name="cgpadescr">Actual Description of CGPA</string>
+    <string name="calendarview">Calendar View</string>
+    <string name="cgpa">CGPA</string>
+    <string name="create">Create</string>
+    <string name="done">Done!</string>
+    <string name="edit">Edit</string>
+    <string name="eventdescr">Event Description</string>
+    <string name="eventname">Event Notifier</string>
+    <string name="eventsum">Event Summary</string>
+    <string name="marktoday">Mark Today\'s</string>
+    <string name="save">Save</string>
+    <string name="sub1">sub1</string>
+    <string name="sub2">sub2</string>
+    <string name="sub3">sub3</string>
+    <string name="sub4">sub4</string>
+    <string name="sub5">sub5</string>
+    <string name="sub6">sub6</string>
+    <string name="sub7">sub7</string>
+    <string name="sub8">sub8</string>
+    <string name="summary">Summary</string>
+    <string name="update">UPDATE!</string>
+    <string name="del">Delete</string>
+    <string name="title_activity_attend_summary">Attend_summary</string>
+
+</resources>

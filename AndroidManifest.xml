@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dnjk.studentcourseguide"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dnjk.studentcourseguide.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Clndrvw"
+            android:label="@string/title_activity_clndrvw" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Attendance"
+            android:label="@string/title_activity_attendance" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Editattend"
+            android:label="@string/title_activity_editattend" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Event_main"
+            android:label="@string/title_activity_event_main" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Event_view"
+            android:label="@string/title_activity_event_view" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Event_edit"
+            android:label="@string/title_activity_event_edit" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Cgpa_main"
+            android:label="@string/title_activity_cgpa_main" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Cgpa_input"
+            android:label="@string/title_activity_cgpa_input" >
+        </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Attend_summary"
+            android:label="@string/title_activity_attend_summary" >
+        </activity>
+    </application>
+
+</manifest>
