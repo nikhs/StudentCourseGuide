@@ -62,6 +62,10 @@
             android:name="com.dnjk.studentcourseguide.Attend_summary"
             android:label="@string/title_activity_attend_summary" >
         </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Display"
+            android:label="@string/title_activity_display" >
+        </activity>
     </application>
 
 </manifest>

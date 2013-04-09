@@ -8,11 +8,11 @@
     <string name="title_activity_attendance">Attendance</string>
     <string name="title_activity_editattend">Editattend</string>
     <string name="title_activity_search">Search</string>
-    <string name="title_activity_event_main">Event_main</string>
+    <string name="title_activity_event_main">Event Notifier</string>
     <string name="title_activity_event_view">Event_view</string>
-    <string name="title_activity_event_edit">Event_edit</string>
+    
     <string name="title_activity_cgpa_main">Cgpa_main</string>
-    <string name="title_activity_cgpa_input">Cgpa_input</string>
+    <string name="title_activity_cgpa_input">Enter GPA Data</string><string name="title_activity_event_edit">Edit Event</string>
     <string name="attendance">Attendance</string>
     <string name="eventnotifier">Event Notifier</string>
     <string name="back">Back</string>
@@ -45,5 +45,6 @@
     <string name="update">UPDATE!</string>
     <string name="del">Delete</string>
     <string name="title_activity_attend_summary">Attend_summary</string>
+    <string name="title_activity_display">Display</string>
 
 </resources>

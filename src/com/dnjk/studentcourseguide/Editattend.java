@@ -9,7 +9,10 @@ import android.widget.CheckBox;
 public class Editattend extends Activity {
 
 		
-	
+	public void initialise(){
+		
+		
+	}
 	int yCount=0,aCount=0;
 	
 	public void disabler(View v){
