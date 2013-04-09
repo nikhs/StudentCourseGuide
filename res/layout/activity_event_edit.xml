@@ -46,13 +46,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Assignment" />
+            android:text="Assignment" 
+            />
 
         <RadioButton
             android:id="@+id/event_radio_exam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Exam" />
+            android:text="Exam" 
+            />
     </RadioGroup>
     <TextView 
         android:id="@+id/event_edit_helper2"
