@@ -2,8 +2,8 @@ package com.dnjk.studentcourseguide;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class AttendData {
@@ -55,7 +55,7 @@ public class AttendData {
 public AttendData(Context c){
 	mycontext=c;
 }	
-public AttendData open(){
+public AttendData open()throws SQLException{
 	atthelper=new DbHelper(mycontext);
 	attdatabase=atthelper.getWritableDatabase();
 	return this;
@@ -63,13 +63,15 @@ public AttendData open(){
 public void close(){
 	atthelper.close();
 }
-public void createEntry(String dayS, String monthS, String acountS, String ycountS) {
+public long createEntry(String dayS, String monthS, String acountS, String ycountS) {
 	// TODO Auto-generated method stub
 	ContentValues cv= new ContentValues();
 	cv.put(KEY_DAY,dayS);
 	cv.put(KEY_MONTH,monthS);
 	cv.put(KEY_ATTENDED,acountS);
 	cv.put(KEY_TOTAL,ycountS);
+	return attdatabase.insert(DATABASE_TABLE, null, cv);
+	
 	
 	
 	

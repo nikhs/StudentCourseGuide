@@ -75,7 +75,7 @@
         android:layout_below="@+id/TextView05"
         android:layout_marginLeft="34dp"
         android:layout_toRightOf="@+id/event_main_heading" 
-        android:onClick="disabler"/>
+        />
 
     <CheckBox
         android:id="@+id/yes5"
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/yes6"
         android:layout_alignTop="@+id/TextView05" 
-        android:onClick="disabler"/>
+        />
 
     <CheckBox
         android:id="@+id/yes4"
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/yes5"
         android:layout_alignTop="@+id/TextView04" 
-        android:onClick="disabler"/>
+        />
 
     <CheckBox
         android:id="@+id/yes3"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/yes4"
         android:layout_alignTop="@+id/TextView03"
-        android:onClick="disabler" />
+         />
 
     <CheckBox
         android:id="@+id/yes2"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/yes3"
         android:layout_alignTop="@+id/TextView02"
-        android:onClick="disabler" />
+         />
 
     <CheckBox
         android:id="@+id/yes1"
@@ -115,7 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/yes2"
         android:layout_alignTop="@+id/TextView06" 
-        android:onClick="disabler" />
+         />
 
     <Button
         android:id="@+id/saveatt"
@@ -133,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/att1"
         android:layout_alignTop="@+id/yes2"
-        android:onClick="attclick" />
+        />
 
     <CheckBox
         android:id="@+id/att3"
@@ -142,7 +142,7 @@
         android:layout_alignBottom="@+id/yes3"
         android:layout_alignLeft="@+id/att2"
         android:layout_below="@+id/TextView02"
-        android:onClick="attclick" />
+         />
 
     <CheckBox
         android:id="@+id/att4"
@@ -151,7 +151,7 @@
         android:layout_alignBaseline="@+id/yes4"
         android:layout_alignBottom="@+id/yes4"
         android:layout_alignParentRight="true"
-        android:onClick="attclick" />
+         />
 
     <CheckBox
         android:id="@+id/att5"
@@ -160,7 +160,7 @@
         android:layout_alignBaseline="@+id/yes5"
         android:layout_alignBottom="@+id/yes5"
         android:layout_alignParentRight="true" 
-        android:onClick="attclick"/>
+       />
 
     <CheckBox
         android:id="@+id/att6"
@@ -168,7 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/saveatt"
         android:layout_alignParentRight="true"
-        android:onClick="attclick" />
+        />
 
     <CheckBox
         android:id="@+id/att1"
@@ -177,7 +177,7 @@
         android:layout_alignBaseline="@+id/yes1"
         android:layout_alignBottom="@+id/yes1"
         android:layout_alignRight="@+id/att4"
-        android:onClick="attclick" />
+         />
 
     <TextView
         android:id="@+id/textview5"
