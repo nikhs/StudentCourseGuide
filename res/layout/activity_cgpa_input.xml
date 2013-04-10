@@ -25,7 +25,8 @@
             android:id="@+id/cgpa_input_12"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" >
+            android:inputType="numberDecimal"
+            android:text="null" >
 
             <requestFocus />
         </EditText>
@@ -139,9 +140,10 @@
 </LinearLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/cgpasave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="Save" />
+        android:text="Save" 
+        android:onClick="savecgpa"/>
 </LinearLayout>
