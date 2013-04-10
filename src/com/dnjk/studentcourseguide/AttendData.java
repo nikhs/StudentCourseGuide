@@ -1,5 +1,6 @@
 package com.dnjk.studentcourseguide;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -8,10 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class AttendData {
 
 	public static final String KEY_ROWID="_id";
-	public static final int KEY_MONTH=1;
-	public static final int KEY_DAY=1;
-	public static final int KEY_ATTENDED=0;
-	public static final int KEY_TOTAL=0;
+	public static final String KEY_MONTH="month of date";
+	public static final String KEY_DAY="day of month";
+	public static final String KEY_ATTENDED="attendedClasses";
+	public static final String KEY_TOTAL="totalClasses";
 
 	private static final String DATABASE_NAME="AtendanceDatabase";
 	private static final String DATABASE_TABLE="Semester";
@@ -34,8 +35,8 @@ public class AttendData {
 			// TODO Auto-generated method stub
 		db.execSQL("CREATE TABLE "+DATABASE_TABLE+" ("+
 			KEY_ROWID+" INTEGER PRIMARY KEY AUTOINCREMENT, "+
-			KEY_MONTH+" INT, "+
 			KEY_DAY+" INT, "+
+			KEY_MONTH+" INT, "+
 			KEY_ATTENDED+ " INT, "+
 			KEY_TOTAL+ " INT)"
 			);	
@@ -59,5 +60,18 @@ public AttendData open(){
 	attdatabase=atthelper.getWritableDatabase();
 	return this;
 }
-
+public void close(){
+	atthelper.close();
+}
+public void createEntry(String dayS, String monthS, String acountS, String ycountS) {
+	// TODO Auto-generated method stub
+	ContentValues cv= new ContentValues();
+	cv.put(KEY_DAY,dayS);
+	cv.put(KEY_MONTH,monthS);
+	cv.put(KEY_ATTENDED,acountS);
+	cv.put(KEY_TOTAL,ycountS);
+	
+	
+	
+}
 }

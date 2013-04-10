@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class Editattend extends Activity {
 
 		
-	private
+	
 		int ycount=0,acount=0;
 		CheckBox y1= (CheckBox) findViewById(R.id.yes1);
 		CheckBox y2= (CheckBox) findViewById(R.id.yes2);
@@ -28,14 +28,16 @@ public class Editattend extends Activity {
 		int month,day;
 		Time today = new Time();
 		
+		String dayS,monthS,ycountS,acountS;
+		
 		
 	public void initialise(){
 		today.setToNow();
 		day=today.monthDay;
 		month=today.month;
-	
+		
 		TextView dateshow=(TextView) findViewById(R.id.attend_edit_showdate);
-		//dateshow.setText(""+day+" "+month);
+		dateshow.setText(""+day+" "+month);
 	
 	
 	}
@@ -66,6 +68,18 @@ public class Editattend extends Activity {
 	if(a4.isChecked())acount++;
 	if(a5.isChecked())acount++;
 	if(a6.isChecked())acount++;
+	
+	
+	AttendData entry=new AttendData(Editattend.this);
+	entry.open();
+	dayS=Integer.toString(day);
+	monthS=Integer.toString(month);
+	ycountS=Integer.toString(ycount);
+	acountS=Integer.toString(acount);
+	
+	entry.createEntry(dayS,monthS,acountS,ycountS);
+	entry.close();
+	
 	
 	}
 				
