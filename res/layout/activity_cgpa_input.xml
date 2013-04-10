@@ -11,132 +11,137 @@
     tools:context=".Cgpa_input" >
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
         <TextView
-        android:id="@+id/cgpa_input_sub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
-        
-        android:text="Sem1&amp;Sem2" />
+            android:id="@+id/cgpa_text_12"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem1 &amp; Sem2" />
 
-    <EditText
-        android:id="@+id/cgpa_input_g1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        
-        android:ems="10"
-        android:inputType="textCapCharacters" >
+        <EditText
+            android:id="@+id/cgpa_input_12"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" >
 
-        <requestFocus />
-    </EditText>
+            <requestFocus />
+        </EditText>
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-    <TextView
-        android:id="@+id/cgpa_input_sub2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sem 3" />
 
-    <EditText
-        android:id="@+id/cgpa_input_g2"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        
-        android:ems="10"
-        android:inputType="textCapCharacters" />
+        <TextView
+            android:id="@+id/cgpa_text_3"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 3" />
+
+        <EditText
+            android:id="@+id/cgpa_input_3"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
-    
-
-  
-
-    
-
-    
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-    <TextView
-        android:id="@+id/Attend_summary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
-        android:text="Sem4" />
-    <EditText
-        android:id="@+id/cgpa_input_g3"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:ems="10"
-        android:inputType="textCapCharacters" />
+
+        <TextView
+            android:id="@+id/cgpa_text_4"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 4" />
+
+        <EditText
+            android:id="@+id/cgpa_input_4"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
-    
-
-   
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-     <TextView
-        android:id="@+id/cgpa_input_sub5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       
-        android:text="sem6" />
-     <EditText
-        android:id="@+id/cgpa_input_g5"
-       	android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:ems="10"
-        android:inputType="textCapCharacters" />
-     
-        
+
+        <TextView
+            android:id="@+id/cgpa_text_5"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 5" />
+
+        <EditText
+            android:id="@+id/cgpa_input_5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
 
-    
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/cgpa_text_6"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 6" />
+
+        <EditText
+            android:id="@+id/cgpa_input_6"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" >
-     <TextView
-        android:id="@+id/cgpa_input_sub4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       
-        android:text="Sem5" />
-    <EditText
-        android:id="@+id/cgpa_input_g4"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:ems="10"
-        android:inputType="textCapCharacters" />
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/cgpa_text_7"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 7" />
+
+        <EditText
+            android:id="@+id/cgpa_input_7"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
     </LinearLayout>
-   
-    
-
-    <TextView
-        android:id="@+id/cgpa_input_sub6"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
-        android:text="sem7" />
+        android:layout_height="wrap_content" >
 
-    <EditText
-        android:id="@+id/cgpa_input_g6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
-        android:inputType="textCapCharacters" />
+        <TextView
+            android:id="@+id/cgpa_text_8"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Sem 8" />
 
-      <Button
-        android:id="@+id/cgpa_input_save"
+        <EditText
+            android:id="@+id/cgpa_input_8"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
-        android:text="@string/save" />
+        android:layout_gravity="bottom"
+        android:text="Save" />
 </LinearLayout>
