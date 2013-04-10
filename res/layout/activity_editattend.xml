@@ -180,14 +180,6 @@
          />
 
     <TextView
-        android:id="@+id/textview5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/event_main_heading"
-        android:layout_alignTop="@+id/saveatt"
-        android:text="Today is:" />
-
-    <TextView
         android:id="@+id/attend_edit_showdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
