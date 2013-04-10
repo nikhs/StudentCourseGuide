@@ -11,6 +11,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Event_edit extends Activity {
 Intent i=getIntent();
@@ -41,7 +42,7 @@ Intent i=getIntent();
 		
 		RadioButton rb=(RadioButton)findViewById(checkedId);
 		type=rb.getText().toString();
-		
+		Toast.makeText(getApplicationContext(), "Pushing Event To Calendar", Toast.LENGTH_LONG).show();
 		Calendar cal = Calendar.getInstance();              
 		Intent intent = new Intent(Intent.ACTION_EDIT);
 		intent.setType("vnd.android.cursor.item/event");

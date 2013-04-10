@@ -44,7 +44,7 @@ public class AttendData {
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 			// TODO Auto-generated method stub
-			
+			onCreate(db);
 		}
 		
 	}

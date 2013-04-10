@@ -2,21 +2,16 @@ package com.dnjk.studentcourseguide;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.format.Time;
 import android.view.Menu;
-import android.view.View;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 public class Editattend extends Activity {
 
 		
-	public void initialise(){
-		
-		
-	}
-	int yCount=0,aCount=0;
-	
-	public void disabler(View v){
-		
+	private
+		int ycount=0,acount=0;
 		CheckBox y1= (CheckBox) findViewById(R.id.yes1);
 		CheckBox y2= (CheckBox) findViewById(R.id.yes2);
 		CheckBox y3= (CheckBox) findViewById(R.id.yes3);
@@ -30,92 +25,59 @@ public class Editattend extends Activity {
 		CheckBox a4= (CheckBox) findViewById(R.id.att4);
 		CheckBox a5= (CheckBox) findViewById(R.id.att5);
 		CheckBox a6= (CheckBox) findViewById(R.id.att6);
+		int month,day;
+		Time today = new Time();
 		
-		switch(v.getId()){
-		case R.id.yes1: 
-			if(y1.isChecked()==true){
-			if(a1.isChecked()){
-				a1.toggle();
-				a1.setClickable(false);
-			}}
-			else if(y1.isChecked()==true){
-				if(a1.isChecked()){
-					a1.setClickable(true);
-				}
-				
-			}
-			
-					
 		
-		case R.id.yes2: 
-			if(y2.isChecked()==true){
-				if(a2.isChecked()){
-					a2.toggle();
-					a2.setClickable(false);
-				}}
-				else if(y2.isChecked()==true){
-					if(a2.isChecked()){
-						a2.setClickable(true);
-					}
-					
-				}
-		case R.id.yes3:
-			if(y3.isChecked()==true){
-				if(a3.isChecked()){
-					a3.toggle();
-					a3.setClickable(false);
-				}}
-				else if(y3.isChecked()==true){
-					if(a3.isChecked()){
-						a3.setClickable(true);
-					}
-					
-				}
-		case R.id.yes4:
-			if(y4.isChecked()==true){
-				if(a4.isChecked()){
-					a4.toggle();
-					a4.setClickable(false);
-				}}
-				else if(y4.isChecked()==true){
-					if(a4.isChecked()){
-						a4.setClickable(true);
-					}
-					
-				}
-		case R.id.yes5:
-			if(y5.isChecked()==true){
-				if(a5.isChecked()){
-					a5.toggle();
-					a5.setClickable(false);
-				}}
-				else if(y5.isChecked()==true){
-					if(a5.isChecked()){
-						a5.setClickable(true);
-					}
-					
-				}
-		case R.id.yes6: 
-			if(y6.isChecked()==true){
-				if(a6.isChecked()){
-					a6.toggle();
-					a6.setClickable(false);
-				}}
-				else if(y6.isChecked()==true){
-					if(a6.isChecked()){
-						a6.setClickable(true);
-					}
-					
-				}
-		
-		}
+	public void initialise(){
+		today.setToNow();
+		day=today.monthDay;
+		month=today.month;
+	
+		TextView dateshow=(TextView) findViewById(R.id.attend_edit_showdate);
+		//dateshow.setText(""+day+" "+month);
+	
+	
 	}
+	
+	
+	public void disabler(){
+		
+	}
+	
+	public void calculate(){
+		if (!y1.isChecked()) a1.setChecked(false);
+		if (!y2.isChecked()) a2.setChecked(false);
+		if (!y3.isChecked()) a3.setChecked(false);
+		if (!y4.isChecked()) a4.setChecked(false);
+		if (!y5.isChecked()) a5.setChecked(false);
+		if (!y6.isChecked()) a6.setChecked(false);
+	
+	if (y1.isChecked())ycount++;
+	if (y1.isChecked())ycount++;
+	if (y1.isChecked())ycount++;
+	if (y1.isChecked())ycount++;
+	if (y1.isChecked())ycount++;
+	if (y1.isChecked())ycount++;
+	
+	if(a1.isChecked())acount++;
+	if(a2.isChecked())acount++;
+	if(a3.isChecked())acount++;
+	if(a4.isChecked())acount++;
+	if(a5.isChecked())acount++;
+	if(a6.isChecked())acount++;
+	
+	}
+				
+		
 	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_editattend);
+	initialise();
+	
 	}
 
 	@Override

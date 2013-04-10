@@ -121,10 +121,10 @@
         android:id="@+id/saveatt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yes6"
+        android:layout_alignRight="@+id/att6"
         android:layout_below="@+id/yes6"
-        android:layout_marginLeft="25dp"
         android:layout_marginTop="19dp"
-        android:layout_toRightOf="@+id/yes6"
         android:text="@string/save" />
 
     <CheckBox
@@ -178,5 +178,22 @@
         android:layout_alignBottom="@+id/yes1"
         android:layout_alignRight="@+id/att4"
         android:onClick="attclick" />
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_main_heading"
+        android:layout_alignTop="@+id/saveatt"
+        android:text="Today is:" />
+
+    <TextView
+        android:id="@+id/attend_edit_showdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveatt"
+        android:layout_alignBottom="@+id/saveatt"
+        android:layout_alignRight="@+id/TextView06"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

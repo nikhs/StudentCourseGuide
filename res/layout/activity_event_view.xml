@@ -43,16 +43,51 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:text="@string/eventname" />
+        android:layout_marginTop="30dp"
+        android:text="@string/eventname"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/event_view_descr"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/event_view_heading"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:orientation="vertical" >
+        
+        <TextView
+        android:id="@+id/event_view_descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+      
+        android:layout_marginBottom="23dp"
         android:text="@string/eventdescr" />
+        
+        <TextView
+        android:id="@+id/event_view_descr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginBottom="23dp"
+        android:text="@string/eventdescr" />
+        
+        <TextView
+        android:id="@+id/event_view_descr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginBottom="23dp"
+        android:text="@string/eventdescr" />
+        
+        <TextView
+        android:id="@+id/event_view_descr4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginBottom="23dp"
+        android:text="@string/eventdescr" />
+        
+    </LinearLayout>
 
 </RelativeLayout>
