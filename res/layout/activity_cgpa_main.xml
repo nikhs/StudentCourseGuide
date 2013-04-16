@@ -9,22 +9,30 @@
     tools:context=".Cgpa_main" >
 
     <TextView
-        android:id="@+id/cgpa_main_heading"
+        android:id="@+id/fina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:text="Current CGPA"
+        android:layout_marginTop="69dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/cgpa_main_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fina"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:text="@string/update" />
+        android:layout_marginTop="22dp"
+        android:text="Enter Sem.GPA" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="CGPA"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

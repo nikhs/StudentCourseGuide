@@ -7,10 +7,11 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Cgpa_main extends Activity {
 
-	Intent i = getIntent();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,12 +22,13 @@ public class Cgpa_main extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-	
+				Intent i=getIntent();
 				i = new Intent(getApplicationContext(),Cgpa_input.class);
 				startActivity(i);
 			}
 		});
-	
+		
+		
 	}
 
 	@Override
@@ -35,5 +37,6 @@ public class Cgpa_main extends Activity {
 		getMenuInflater().inflate(R.menu.cgpa_main, menu);
 		return true;
 	}
+	
 
 }
