@@ -66,6 +66,10 @@
             android:name="com.dnjk.studentcourseguide.Display"
             android:label="@string/title_activity_display" >
         </activity>
+        <activity
+            android:name="com.dnjk.studentcourseguide.Cgpa_sum"
+            android:label="@string/title_activity_cgpa_sum" >
+        </activity>
     </application>
 
 </manifest>

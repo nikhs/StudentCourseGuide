@@ -30,15 +30,4 @@
         android:layout_marginTop="50dp"
         android:text="@string/marktoday" />
 
-    <Button
-        android:id="@+id/clndrview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mrktdy"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/calendarview" />
-
 </RelativeLayout>
