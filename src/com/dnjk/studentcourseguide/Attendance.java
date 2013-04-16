@@ -29,16 +29,6 @@ public class Attendance extends Activity {
 		});
 	
 
-		Button calendar = (Button)findViewById(R.id.clndrview);
-		calendar.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent i = getIntent();
-				i = new Intent(getApplicationContext(), Clndrvw.class);
-				startActivity(i);
-			}
-		});
 		
 		Button summary = (Button)findViewById(R.id.smryattend);
 		summary.setOnClickListener(new OnClickListener(){
@@ -49,7 +39,7 @@ public class Attendance extends Activity {
 				Intent i=getIntent();
 				i=new Intent(getApplicationContext(),Attend_summary.class);
 				startActivity(i);
-				
+				finish();
 			}
 		});
 	}

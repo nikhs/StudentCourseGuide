@@ -52,6 +52,7 @@ Intent i=getIntent();
 		intent.putExtra("endTime", cal.getTimeInMillis()+60*60*1000);
 		intent.putExtra("title", name);
 		startActivity(intent);
+		finish();
 		
 	}
 	@Override

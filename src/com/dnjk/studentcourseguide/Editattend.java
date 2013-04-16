@@ -1,21 +1,53 @@
 package com.dnjk.studentcourseguide;
 
 import android.app.Activity;
-import android.app.Dialog;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Editattend extends Activity {
 
-	
+	SQLiteDatabase DB;
+	Button save,bt;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_editattend);
+		DB=this.openOrCreateDatabase("DB", MODE_PRIVATE, null);
+		DB.execSQL("CREATE TABLE IF NOT EXISTS Attendence (Day VARCHAR,Month VARCHAR,Att VARCHAR,Total VARCHAR);");
 	
+		save=(Button) findViewById(R.id.saveatt);
+		/*bt=(Button) findViewById(R.id.button1);
+		bt.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				
+					DB.execSQL("DELETE FROM Attendence;");
+				
+				
+			}
+		});*/
+		save.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				calculate();
+				Toast.makeText(getApplicationContext(), "Attendance Updated", Toast.LENGTH_LONG).show();
+				Intent i=new Intent(Editattend.this, Attendance.class);
+				startActivity(i);
+				finish();
+			}
+		});
 	
 	}
 
@@ -65,7 +97,7 @@ public class Editattend extends Activity {
 			month=today.month;
 			
 			TextView dateshow=(TextView) findViewById(R.id.attend_edit_showdate);
-			dateshow.setText(""+day+" "+month);
+			//dateshow.setText(""+day+" "+month);
 		
 		
 		
@@ -77,11 +109,11 @@ public class Editattend extends Activity {
 		if (!y6.isChecked()) a6.setChecked(false);
 	
 	if (y1.isChecked())ycount++;
-	if (y1.isChecked())ycount++;
-	if (y1.isChecked())ycount++;
-	if (y1.isChecked())ycount++;
-	if (y1.isChecked())ycount++;
-	if (y1.isChecked())ycount++;
+	if (y2.isChecked())ycount++;
+	if (y3.isChecked())ycount++;
+	if (y4.isChecked())ycount++;
+	if (y5.isChecked())ycount++;
+	if (y6.isChecked())ycount++;
 	
 	if(a1.isChecked())acount++;
 	if(a2.isChecked())acount++;
@@ -96,8 +128,8 @@ public class Editattend extends Activity {
 	monthS=Integer.toString(month);
 	ycountS=Integer.toString(ycount);
 	acountS=Integer.toString(acount);
-	boolean dbwrite=true;
-	try{
+	DB.execSQL("INSERT INTO Attendence Values('"+dayS+"','"+monthS+"','"+acountS+"','"+ycountS+"');");
+	/*try{
 	entry.open();
 	entry.createEntry(dayS,monthS,acountS,ycountS);
 	entry.close();
@@ -112,7 +144,7 @@ public class Editattend extends Activity {
 			d.setContentView(tv);
 			d.show();
 		}
-	}
+	}*/
 	
 	}
 				
